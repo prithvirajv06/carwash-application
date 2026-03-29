@@ -41,7 +41,7 @@ export const generateInvoicePDF = async (data: InvoiceData): Promise<string> => 
       .fillColor('white')
       .fontSize(28)
       .font('Helvetica-Bold')
-      .text('CARWASH SERVICE', 50, 30, { align: 'center' });
+      .text('Glossplus Premium Car Spa', 50, 30, { align: 'center' });
     doc.fontSize(12).font('Helvetica').text('Professional Mobile Car Washing', 50, 65, { align: 'center' });
 
     doc.fillColor('#1e3a8a').fontSize(20).font('Helvetica-Bold').text('INVOICE', 400, 120);
@@ -110,7 +110,7 @@ export const generateInvoicePDF = async (data: InvoiceData): Promise<string> => 
     doc.fillColor('#6b7280').fontSize(8).font('Helvetica').text('Paid via Razorpay', 50, y + 60);
 
     doc.moveTo(50, 740).lineTo(562, 740).strokeColor('#e5e7eb').lineWidth(1).stroke();
-    doc.fillColor('#6b7280').fontSize(9).text('Thank you for choosing CarWash Service!', 50, 750, { align: 'center' });
+    doc.fillColor('#6b7280').fontSize(9).text('Thank you for choosing Glossplus Premium Car Spa!', 50, 750, { align: 'center' });
     doc.text('For support, contact us at support@carwash.com', 50, 764, { align: 'center' });
 
     doc.end();

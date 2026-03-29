@@ -14,6 +14,7 @@ import { createDropdownSchema, updateDropdownSchema } from '../validators/dropdo
 const router = Router();
 
 router.get('/', listDropdowns);
+router.post('/create-category', )
 router.get('/categories', listCategories);
 router.get('/tree/:category', getDropdownTree);
 

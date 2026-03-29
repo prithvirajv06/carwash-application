@@ -16,7 +16,7 @@ import {
   forgotPasswordSchema,
   resetPasswordSchema,
 } from '../validators/auth.validator';
-import { createAdmin } from '@/controllers/user.controller';
+import { createAdmin } from '../controllers/user.controller';
 
 const router = Router();
 

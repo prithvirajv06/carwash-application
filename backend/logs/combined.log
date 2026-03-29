@@ -90,3 +90,76 @@
 2026-03-29 01:05:35 [[32minfo[39m]: Firebase Admin initialized
 2026-03-29 01:05:35 [[32minfo[39m]: 🚀 CarWash API running on port 3000 [development]
 2026-03-29 01:05:35 [[32minfo[39m]: 📍 Health check: http://localhost:3000/health
+2026-03-29 14:11:13 [[32minfo[39m]: MongoDB connected successfully
+2026-03-29 14:11:13 [[32minfo[39m]: Firebase Admin initialized
+2026-03-29 14:11:13 [[32minfo[39m]: 🚀 CarWash API running on port 3000 [development]
+2026-03-29 14:11:13 [[32minfo[39m]: 📍 Health check: http://localhost:3000/health
+2026-03-29 14:11:13 [[31merror[39m]: ValidationError: User validation failed: phone: Path `phone` is required.
+    at model.Document.invalidate (D:\projects\glossplus min\backend\node_modules\mongoose\lib\document.js:3381:32)
+    at D:\projects\glossplus min\backend\node_modules\mongoose\lib\document.js:3142:17
+    at D:\projects\glossplus min\backend\node_modules\mongoose\lib\schemaType.js:1446:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-03-29 14:13:22 [[32minfo[39m]: MongoDB connected successfully
+2026-03-29 14:13:22 [[32minfo[39m]: Firebase Admin initialized
+2026-03-29 14:13:22 [[32minfo[39m]: 🚀 CarWash API running on port 3000 [development]
+2026-03-29 14:13:22 [[32minfo[39m]: 📍 Health check: http://localhost:3000/health
+2026-03-29 14:13:28 [[32minfo[39m]: Welcome email sent to prithvirajv@outloock.com
+2026-03-29 14:15:47 [[32minfo[39m]: MongoDB connected successfully
+2026-03-29 14:15:47 [[32minfo[39m]: Firebase Admin initialized
+2026-03-29 14:15:47 [[32minfo[39m]: 🚀 CarWash API running on port 3000 [development]
+2026-03-29 14:15:47 [[32minfo[39m]: 📍 Health check: http://localhost:3000/health
+2026-03-29 14:15:52 [[32minfo[39m]: Welcome email sent to prithvirajv@outlook.com
+2026-03-29 14:20:01 [[32minfo[39m]: MongoDB connected successfully
+2026-03-29 14:20:01 [[32minfo[39m]: Firebase Admin initialized
+2026-03-29 14:20:01 [[32minfo[39m]: 🚀 CarWash API running on port 3000 [development]
+2026-03-29 14:20:01 [[32minfo[39m]: 📍 Health check: http://localhost:3000/health
+2026-03-29 14:20:01 [[31merror[39m]: Error: Admin with this email already exists
+    at createAdmin (D:\projects\glossplus min\backend\src\controllers\auth.controller.ts:72:11)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-03-29 17:29:23 [[32minfo[39m]: MongoDB connected successfully
+2026-03-29 17:29:23 [[32minfo[39m]: Firebase Admin initialized
+2026-03-29 17:29:23 [[32minfo[39m]: 🚀 CarWash API running on port 3000 [development]
+2026-03-29 17:29:23 [[32minfo[39m]: 📍 Health check: http://localhost:3000/health
+2026-03-29 17:29:23 [[31merror[39m]: Error: Admin with this email already exists
+    at createAdmin (D:\projects\glossplus min\backend\src\controllers\auth.controller.ts:72:11)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-03-29 18:17:26 [[32minfo[39m]: MongoDB connected successfully
+2026-03-29 18:17:26 [[32minfo[39m]: Firebase Admin initialized
+2026-03-29 18:17:26 [[32minfo[39m]: 🚀 CarWash API running on port 3000 [development]
+2026-03-29 18:17:26 [[32minfo[39m]: 📍 Health check: http://localhost:3000/health
+2026-03-29 18:17:26 [[31merror[39m]: Error: Admin with this email already exists
+    at createAdmin (D:\projects\glossplus min\backend\src\controllers\auth.controller.ts:73:11)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-03-29 18:45:59 [[31merror[39m]: MongoServerError: E11000 duplicate key error collection: glossplus_db.users index: email_1 dup key: { email: "donranjith58@gmail.com" }
+    at InsertOneOperation.handleOk (D:\projects\glossplus min\backend\node_modules\mongoose\node_modules\mongodb\src\operations\insert.ts:79:13)
+    at tryOperation (D:\projects\glossplus min\backend\node_modules\mongoose\node_modules\mongodb\src\operations\execute_operation.ts:290:26)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at executeOperation (D:\projects\glossplus min\backend\node_modules\mongoose\node_modules\mongodb\src\operations\execute_operation.ts:119:12)
+    at Collection.insertOne (D:\projects\glossplus min\backend\node_modules\mongoose\node_modules\mongodb\src\collection.ts:294:12)
+2026-03-29 18:46:04 [[32minfo[39m]: Welcome email sent to donranjith58@gmail.com
+2026-03-29 22:49:14 [[32minfo[39m]: MongoDB connected successfully
+2026-03-29 22:49:15 [[32minfo[39m]: Firebase Admin initialized
+2026-03-29 22:49:15 [[32minfo[39m]: 🚀 CarWash API running on port 3000 [development]
+2026-03-29 22:49:15 [[32minfo[39m]: 📍 Health check: http://localhost:3000/health
+2026-03-29 22:49:15 [[31merror[39m]: Error: Admin with this email already exists
+    at createAdmin (D:\projects\glossplus min\backend\src\controllers\auth.controller.ts:73:11)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-03-29 23:08:59 [[32minfo[39m]: MongoDB connected successfully
+2026-03-29 23:08:59 [[32minfo[39m]: Firebase Admin initialized
+2026-03-29 23:08:59 [[32minfo[39m]: 🚀 CarWash API running on port 3000 [development]
+2026-03-29 23:08:59 [[32minfo[39m]: 📍 Health check: http://localhost:3000/health
+2026-03-29 23:08:59 [[31merror[39m]: Error: Admin with this email already exists
+    at createAdmin (D:\projects\glossplus min\backend\src\controllers\auth.controller.ts:73:11)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-03-29 23:09:04 [[31merror[39m]: ValidationError: Car validation failed: type: `Sport Utility Vehicle` is not a valid enum value for path `type`.
+    at model.Document.invalidate (D:\projects\glossplus min\backend\node_modules\mongoose\lib\document.js:3381:32)
+    at D:\projects\glossplus min\backend\node_modules\mongoose\lib\document.js:3142:17
+    at D:\projects\glossplus min\backend\node_modules\mongoose\lib\schemaType.js:1446:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-03-29 23:09:37 [[32minfo[39m]: MongoDB connected successfully
+2026-03-29 23:09:37 [[32minfo[39m]: Firebase Admin initialized
+2026-03-29 23:09:37 [[32minfo[39m]: 🚀 CarWash API running on port 3000 [development]
+2026-03-29 23:09:37 [[32minfo[39m]: 📍 Health check: http://localhost:3000/health
+2026-03-29 23:09:37 [[31merror[39m]: Error: Admin with this email already exists
+    at createAdmin (D:\projects\glossplus min\backend\src\controllers\auth.controller.ts:73:11)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)

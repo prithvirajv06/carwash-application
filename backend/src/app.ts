@@ -6,6 +6,7 @@ import rateLimit from 'express-rate-limit';
 import path from 'path';
 import router from './routes';
 import { errorHandler, notFoundHandler } from './middlewares/error.middleware';
+import { createAdmin } from './controllers/auth.controller';
 
 const app = express();
 
@@ -40,17 +41,19 @@ app.use('/api/auth/customer/login', authLimiter);
 app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+createAdmin('Prithviraj V', 'prithvirajv@outlook.com','8940262425');
 
 app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
 
 app.get('/health', (_req, res) => {
   res.json({
     success: true,
-    message: 'CarWash API is running',
+    message: 'GlossPlus API is running',
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV,
   });
 });
+
 
 app.use('/api', router);
 

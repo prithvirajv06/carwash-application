@@ -113,6 +113,7 @@ export const deleteDropdown = async (req: AuthRequest, res: Response, next: Next
   }
 };
 
+
 export const listCategories = async (req: AuthRequest, res: Response, next: NextFunction): Promise<void> => {
   try {
     const categories = await DropdownConfig.distinct('category', { isActive: true });

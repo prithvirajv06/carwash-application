@@ -16,7 +16,7 @@ const router = Router();
 router.use(authenticate);
 
 router.get('/my', getMyCars);
-router.post('/', authorize('customer'), validate(createCarSchema), addCar);
+router.post('/', authorize('customer','admin'), validate(createCarSchema), addCar);
 router.get('/:id', getCarById);
 router.put('/:id', authorize('customer'), validate(updateCarSchema), updateCar);
 router.delete('/:id', authorize('customer'), deleteCar);

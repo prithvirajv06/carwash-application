@@ -7,7 +7,6 @@ const carSchema = new Schema<ICar>(
     nickname: { type: String, required: true, trim: true },
     type: {
       type: String,
-      enum: ['Hatchback', 'Sedan', 'SUV', 'MUV', 'Luxury', 'Van'],
       required: true,
     },
     licensePlate: { type: String, required: true, unique: true, uppercase: true, trim: true },

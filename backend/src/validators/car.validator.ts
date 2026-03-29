@@ -1,11 +1,10 @@
 import { z } from 'zod';
 
-const carTypeEnum = z.enum(['Hatchback', 'Sedan', 'SUV', 'MUV', 'Luxury', 'Van']);
 
 export const createCarSchema = z.object({
   body: z.object({
     nickname: z.string().min(1).max(50),
-    type: carTypeEnum,
+    type: z.string(),
     licensePlate: z
       .string()
       .min(1)
@@ -18,7 +17,7 @@ export const createCarSchema = z.object({
 export const updateCarSchema = z.object({
   body: z.object({
     nickname: z.string().min(1).max(50).optional(),
-    type: carTypeEnum.optional(),
+    type: z.string().optional(),
     parkingLotInfo: z.string().min(1).max(200).optional(),
   }),
 });

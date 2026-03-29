@@ -409,3 +409,72 @@ src/
 ├── app.ts                   # Express app setup
 └── index.ts                 # Server bootstrap
 ```
+
+
+
+```json
+final _sampleData = {
+  'summary': DashboardSummary(
+    totalCars: 2,
+    activeSubscriptions: 1,
+    totalSubscriptions: 4,
+    pendingTasks: 2,
+    completedWashesTotal: 31,
+  ),
+  'activeSubscriptions': [
+    ActiveSubscription(
+      id: '664f1a2b3c4d5e6f7a8b9c10',
+      carNickname: 'My Swift',
+      carType: 'Hatchback',
+      licensePlate: 'TN09AB1234',
+      planName: 'Premium Monthly',
+      planAttributes: ['Exterior Wash', 'Interior Vacuum', 'Tyre Shine'],
+      daysLeft: 3,
+      completedWashes: 22,
+      pendingWashes: 2,
+      isExpiringSoon: true,
+      progressPercent: 90,
+      expiryDate: DateTime(2026, 4, 1),
+      nextTaskDate: '2026-03-30T07:00:00.000Z',
+      nextTaskStatus: 'Pending',
+    ),
+  ],
+  'nextWash': NextWash(
+    status: 'Pending',
+    carNickname: 'My Swift',
+    carType: 'Hatchback',
+    licensePlate: 'TN09AB1234',
+    employeeName: 'Suresh K',
+    scheduledDate: DateTime(2026, 3, 30, 7),
+  ),
+  'recentPayments': [
+    RecentPayment(
+      id: '1',
+      amount: 1299,
+      currency: 'INR',
+      status: 'captured',
+      invoiceNumber: 'INV-202603-A1B2C3',
+      invoiceUrl: '/uploads/invoices/INV-202603-A1B2C3.pdf',
+      createdAt: DateTime(2026, 3, 1, 10, 22),
+    ),
+    RecentPayment(
+      id: '2',
+      amount: 999,
+      currency: 'INR',
+      status: 'captured',
+      invoiceNumber: 'INV-202602-D4E5F6',
+      invoiceUrl: '/uploads/invoices/INV-202602-D4E5F6.pdf',
+      createdAt: DateTime(2026, 2, 1, 9, 15),
+    ),
+    RecentPayment(
+      id: '3',
+      amount: 1299,
+      currency: 'INR',
+      status: 'failed',
+      invoiceNumber: 'INV-202601-G7H8I9',
+      invoiceUrl: null,
+      createdAt: DateTime(2026, 1, 5, 14, 30),
+    ),
+  ],
+};
+```

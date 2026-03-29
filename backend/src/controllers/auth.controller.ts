@@ -35,6 +35,7 @@ export const firebaseLogin = async (req: AuthRequest, res: Response, next: NextF
       });
     } else if (!user.firebaseUid) {
       user.firebaseUid = uid;
+      user.lastActiveAt = new Date();
       await user.save();
     }
 
@@ -66,7 +67,7 @@ export const firebaseLogin = async (req: AuthRequest, res: Response, next: NextF
   }
 };
 
-export const createAdmin = async (name: string, email: string): Promise<void> => {
+export const createAdmin = async (name: string, email: string, phone: string): Promise<void> => {
   const existingAdmin = await User.findOne({ email, role: 'admin' });
   if (existingAdmin) {
     throw new AppError('Admin with this email already exists', 400);
@@ -78,6 +79,7 @@ export const createAdmin = async (name: string, email: string): Promise<void> =>
   const admin = new User({
     name,
     email,
+    phone: `+91${phone}`,
     passwordHash,
     role: 'admin',
     isFirstLogin: true,

@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const fromAddress = process.env.SMTP_FROM || 'CarWash Service <noreply@carwash.com>';
+const fromAddress = process.env.SMTP_FROM || 'Glossplus Premium Car Spa <noreply@carwash.com>';
 
 export const sendWelcomeEmail = async (
   to: string,
@@ -21,10 +21,10 @@ export const sendWelcomeEmail = async (
   await transporter.sendMail({
     from: fromAddress,
     to,
-    subject: 'Welcome to CarWash Service - Your Login Credentials',
+    subject: 'Welcome to Glossplus Premium Car Spa - Your Login Credentials',
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #2563eb;">Welcome to CarWash Service</h2>
+        <h2 style="color: #2563eb;">Welcome to Glossplus Premium Car Spa</h2>
         <p>Hello <strong>${name}</strong>,</p>
         <p>Your admin account has been created. Please use the credentials below to log in:</p>
         <div style="background: #f3f4f6; padding: 16px; border-radius: 8px; margin: 20px 0;">
@@ -50,7 +50,7 @@ export const sendPasswordResetEmail = async (
   await transporter.sendMail({
     from: fromAddress,
     to,
-    subject: 'CarWash Service - Password Reset Request',
+    subject: 'Glossplus Premium Car Spa - Password Reset Request',
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #2563eb;">Password Reset Request</h2>
@@ -82,7 +82,7 @@ export const sendSubscriptionConfirmation = async (
   await transporter.sendMail({
     from: fromAddress,
     to,
-    subject: `CarWash Service - Subscription Confirmed (${invoiceNumber})`,
+    subject: `Glossplus Premium Car Spa - Subscription Confirmed (${invoiceNumber})`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #16a34a;">Subscription Confirmed!</h2>
@@ -93,7 +93,7 @@ export const sendSubscriptionConfirmation = async (
           <p><strong>Invoice Number:</strong> ${invoiceNumber}</p>
           <p><strong>Valid Until:</strong> ${expiryDate.toDateString()}</p>
         </div>
-        <p>Our team will contact you to schedule your first wash. Thank you for choosing CarWash Service!</p>
+        <p>Our team will contact you to schedule your first wash. Thank you for choosing Glossplus Premium Car Spa!</p>
       </div>
     `,
   });

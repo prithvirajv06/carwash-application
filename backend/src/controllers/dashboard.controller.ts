@@ -182,7 +182,7 @@ export const getStaticContent = async (req: AuthRequest, res: Response, next: Ne
         { q: 'Is water used for washing?', a: 'We use minimal water with our advanced eco-wash system, using up to 90% less water than traditional methods.' },
       ],
       about: {
-        name: 'CarWash Service',
+        name: 'Glossplus Premium Car Spa',
         tagline: 'Professional Car Washing at Your Doorstep',
         description: 'We bring professional car washing services directly to your apartment parking lot. Our trained team uses eco-friendly products to keep your vehicle spotless.',
         founded: '2023',

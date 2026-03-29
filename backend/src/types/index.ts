@@ -45,7 +45,7 @@ export interface PaginationQuery {
 }
 
 export interface PriceMatrix {
-  carType: CarType;
+  carType: string;
   apartmentId: string;
   price: number;
 }
@@ -78,13 +78,14 @@ export interface IUser extends Document {
   firebaseUid?: string;
   createdAt: Date;
   updatedAt: Date;
+  lastActiveAt?: Date;
 }
 
 export interface ICar extends Document {
   _id: Types.ObjectId;
   userId: Types.ObjectId;
   nickname: string;
-  type: CarType;
+  type: string;
   licensePlate: string;
   parkingLotInfo: string;
   isActive: boolean;
@@ -112,6 +113,7 @@ export interface ISubscription extends Document {
   expiryDate: Date;
   createdAt: Date;
 }
+
 
 export interface IDropdownConfig extends Document {
   _id: Types.ObjectId;
