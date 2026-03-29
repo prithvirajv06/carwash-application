@@ -1,0 +1,54 @@
+2026-03-26 02:31:00 [[31merror[39m]: Error: querySrv ECONNREFUSED _mongodb._tcp.2026
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17)
+2026-03-26 02:36:15 [[31merror[39m]: Error: querySrv ECONNREFUSED _mongodb._tcp.2026
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17)
+2026-03-26 02:41:46 [[31merror[39m]: MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\connection.js:1100:11)
+    at connectDatabase (D:\projects\glossplus-vendor\backend\src\config\database.ts:19:3)
+    at bootstrap (D:\projects\glossplus-vendor\backend\src\index.ts:27:5)
+2026-03-26 02:42:21 [[31merror[39m]: MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\connection.js:1100:11)
+    at connectDatabase (D:\projects\glossplus-vendor\backend\src\config\database.ts:19:3)
+    at bootstrap (D:\projects\glossplus-vendor\backend\src\index.ts:27:5)
+2026-03-28 17:49:06 [[31merror[39m]: ValidationError: User validation failed: name: Path `name` is required., email: Path `email` is required.
+    at model.Document.invalidate (D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3381:32)
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3142:17
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\schemaType.js:1446:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-03-28 17:49:06 [[31merror[39m]: ValidationError: User validation failed: name: Path `name` is required., email: Path `email` is required.
+    at model.Document.invalidate (D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3381:32)
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3142:17
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\schemaType.js:1446:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-03-28 17:50:06 [[31merror[39m]: ValidationError: User validation failed: name: Path `name` is required., email: Path `email` is required.
+    at model.Document.invalidate (D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3381:32)
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3142:17
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\schemaType.js:1446:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-03-28 17:54:14 [[31merror[39m]: ValidationError: User validation failed: name: Path `name` is required., email: Path `email` is required.
+    at model.Document.invalidate (D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3381:32)
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3142:17
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\schemaType.js:1446:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-03-28 17:54:17 [[31merror[39m]: ValidationError: User validation failed: name: Path `name` is required., email: Path `email` is required.
+    at model.Document.invalidate (D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3381:32)
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3142:17
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\schemaType.js:1446:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-03-28 17:54:17 [[31merror[39m]: ValidationError: User validation failed: name: Path `name` is required., email: Path `email` is required.
+    at model.Document.invalidate (D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3381:32)
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3142:17
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\schemaType.js:1446:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-03-28 17:54:20 [[31merror[39m]: ValidationError: User validation failed: name: Path `name` is required., email: Path `email` is required.
+    at model.Document.invalidate (D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3381:32)
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\document.js:3142:17
+    at D:\projects\glossplus-vendor\backend\node_modules\mongoose\lib\schemaType.js:1446:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-03-28 17:57:20 [[31merror[39m]: Error: Error while making request: getaddrinfo ENOTFOUND www.googleapis.com. Error code: ENOTFOUND
+    at FirebaseTokenVerifier.mapJwtErrorToAuthError (D:\projects\glossplus-vendor\backend\node_modules\firebase-admin\lib\auth\token-verifier.js:280:16)
+    at D:\projects\glossplus-vendor\backend\node_modules\firebase-admin\lib\auth\token-verifier.js:252:24
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at firebaseLogin (D:\projects\glossplus-vendor\backend\src\controllers\auth.controller.ts:15:21)
